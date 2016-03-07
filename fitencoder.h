@@ -3,7 +3,7 @@
 
 #include "baseparser.h"
 
-#include <QDateTime.h>
+#include <QDateTime>
 
 #include "garminfitsdk/fit_mesg_broadcaster.hpp"
 

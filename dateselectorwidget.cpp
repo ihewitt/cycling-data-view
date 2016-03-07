@@ -1,10 +1,10 @@
 #include "dateselectorwidget.h"
 
-#include <QGridLayout.h>
-#include <QSlider.h>
-#include <QLabel.h>
-#include <QCheckBox.h>
-#include <QGroupBox.h>
+#include <QGridLayout>
+#include <QSlider>
+#include <QLabel>
+#include <QCheckBox>
+#include <QGroupBox>
 
 #include <cassert>
 #include <sstream>

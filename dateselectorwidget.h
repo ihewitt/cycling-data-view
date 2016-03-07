@@ -1,9 +1,9 @@
 #ifndef DATESELECTORWIDGET_H
 #define DATESELECTORWIDGET_H
 
-#include <qtxml/qdomdocument>
-#include <QGroupBox.h>
-#include <QDateTime.h>
+#include <QtXml/QDomDocument>
+#include <QGroupBox>
+#include <QDateTime>
 
 class QSlider;
 class QLabel;

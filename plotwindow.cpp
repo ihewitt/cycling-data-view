@@ -20,13 +20,13 @@
 #include <qwt_plot_marker.h>
 #include <qwt_symbol.h>
 
-#include <QComboBox.h>
-#include <QBoxLayout.h>
-#include <QCheckBox.h>
-#include <QLabel.h>
-#include <QComboBox.h>
-#include <QSpinBox.h>
-#include <QMessageBox.h>
+#include <QComboBox>
+#include <QBoxLayout>
+#include <QCheckBox>
+#include <QLabel>
+#include <QComboBox>
+#include <QSpinBox>
+#include <QMessageBox>
 
 #include <cassert>
 #include <iostream>
@@ -36,7 +36,7 @@
 class XAxisScaleDraw: public QwtScaleDraw
 {
 public:
-	XAxisScaleDraw(QString& type):
+    XAxisScaleDraw(const QString& type):
 	  _type(type)
 	  {}
  
@@ -412,10 +412,10 @@ PlotWindow::PlotWindow(
 
 	// Plot picker for numerical display
 	_plot_picker1 = 
-		new QwtCustomPlotPicker(
+        new QwtCustomPlotPicker(
 		QwtPlot::xBottom, QwtPlot::yLeft, 
 		_data_log, 
-		_plot->canvas(), 
+        (QwtPlotCanvas*)_plot->canvas(),
 		_hr_cb, _speed_cb, _alt_cb, _cadence_cb, _power_cb, _temp_cb);
 		
 	_plot_picker1->setRubberBandPen(QColor(Qt::white));
@@ -431,7 +431,7 @@ PlotWindow::PlotWindow(
 	connect(_plot_picker2, SIGNAL(moved(const QPointF&)), this, SLOT(endSelection(const QPointF&)));
 
 	// Plot zoomer
-	_plot_zoomer = new QwtCustomPlotZoomer(QwtPlot::xBottom, QwtPlot::yLeft, _plot->canvas());
+    _plot_zoomer = new QwtCustomPlotZoomer(QwtPlot::xBottom, QwtPlot::yLeft, (QwtPlotCanvas*)_plot->canvas());
 	_plot_zoomer->setRubberBand(QwtPicker::UserRubberBand);
     _plot_zoomer->setRubberBandPen(QColor(Qt::white));
     _plot_zoomer->setTrackerMode(QwtPicker::AlwaysOff);

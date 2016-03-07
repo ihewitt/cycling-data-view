@@ -1,7 +1,7 @@
 #ifndef LOGEDITORWINDOW_H
 #define LOGEDITORWINDOW_H
 
-#include <Qwidget.h>
+#include <QWidget>
 
 #include <boost/shared_ptr.hpp>
 

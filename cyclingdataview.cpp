@@ -1,9 +1,9 @@
 // cyclingdataview.cpp : Defines the entry point for the console application.
 
-#include <QApplication.h>
-#include <QSplashScreen.h>
+#include <QApplication>
+#include <QSplashScreen>
 
-#include <windows.h>
+//#include <windows.h>
 #include "mainwindow.h"
 
 int main( int argc, char ** argv )
@@ -13,7 +13,7 @@ int main( int argc, char ** argv )
 	QPixmap pixmap("resources/splash_screen.png");
 	QSplashScreen splash(pixmap);
 	splash.show();
-	Sleep(1000); // msec
+    sleep(1); // msec
 
     MainWindow* mw = new MainWindow();
 	mw->showMaximized();

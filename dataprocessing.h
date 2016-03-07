@@ -1,7 +1,7 @@
 #ifndef DATAPROCESSING_H
 #define DATAPROCESSING_H
 
-#include <QString.h>
+#include <QString>
 #include <vector>
 
 namespace DataProcessing
@@ -29,30 +29,24 @@ namespace DataProcessing
 		const std::vector<double>& dist,
 		std::vector<double>& speed);
 
-	double computeAverage(
-		std::vector<double>::const_iterator& start,
-		std::vector<double>::const_iterator& end);
+    double computeAverage(std::vector<double>::const_iterator start,
+        std::vector<double>::const_iterator end);
 
-	double computeNthPercentile(
-		std::vector<double>::const_iterator& start,
-		std::vector<double>::const_iterator& end,
-		double N);
+    double computeNthPercentile(std::vector<double>::const_iterator start,
+        std::vector<double>::const_iterator end,
+        double N);
 
-	double computeMax(
-		std::vector<double>::const_iterator& start,
-		std::vector<double>::const_iterator& end);
+    double computeMax(std::vector<double>::const_iterator start,
+        std::vector<double>::const_iterator end);
 
-	double computeMin(
-		std::vector<double>::const_iterator& start,
-		std::vector<double>::const_iterator& end);
+    double computeMin(std::vector<double>::const_iterator start,
+        std::vector<double>::const_iterator end);
 
-	double computeGain(
-		std::vector<double>::const_iterator& start,
-		std::vector<double>::const_iterator& end);
+    double computeGain(std::vector<double>::const_iterator start,
+        std::vector<double>::const_iterator end);
 
-	double computeLoss(
-		std::vector<double>::const_iterator& start,
-		std::vector<double>::const_iterator& end);
+    double computeLoss(std::vector<double>::const_iterator start,
+        std::vector<double>::const_iterator end);
 
 	// Some functions to convert data to text
 	const QString minsFromSecs(int seconds);

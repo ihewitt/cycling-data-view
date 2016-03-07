@@ -1,7 +1,7 @@
 #ifndef SPECIFYUSERWINDOW_H
 #define SPECIFYUSERWINDOW_H
  
-#include <Qwidget.h>
+#include <QWidget>
 
 #include <boost/shared_ptr.hpp>
 

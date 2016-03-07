@@ -1,9 +1,9 @@
 #ifndef DATALOG_H
 #define DATALOG_H
 
-#include <QString.h>
-#include <QMap.h>
-#include <QDateTime.h>
+#include <QString>
+#include <QMap>
+#include <QDateTime>
 
 #include <vector>
 
@@ -37,7 +37,7 @@ class DataLog
 	int numLaps() { return _lap_indecies.size(); };
 
 	std::pair<int, int>& lap(int lap_index);
-	void addLap(std::pair<int, int>& lap);
+    void addLap(const std::pair<int, int>& lap);
 
 	double& time(int idx);
 	double& ltd(int idx);

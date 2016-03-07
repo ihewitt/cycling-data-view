@@ -1,7 +1,7 @@
 #ifndef PLOTWINDOW_H
 #define PLOTWINDOW_H
 
-#include <QWidget.h>
+#include <QWidget>
 
 #include <qwt_plot.h>
 #include <qwt_plot_curve.h>

@@ -6,21 +6,21 @@
 #include "baseparser.h"
 #include "logdirectorysummary.h"
 
-#include <QTableWidget.h>
-#include <QBoxLayout.h>
-#include <QLabel.h>
-#include <QItemDelegate.h>
-#include <QPainter.h>
-#include <QMessageBox.h>
-#include <QProgressDialog.h>
-#include <QComboBox.h>
-#include <QSpinBox.h>
-#include <QPushButton.h>
-#include <QGroupBox.h>
-#include <QScrollBar.h>
-#include <QFile.h>
-#include <QString.h>
-#include <QProcess.h>
+#include <QTableWidget>
+#include <QBoxLayout>
+#include <QLabel>
+#include <QItemDelegate>
+#include <QPainter>
+#include <QMessageBox>
+#include <QProgressDialog>
+#include <QComboBox>
+#include <QSpinBox>
+#include <QPushButton>
+#include <QGroupBox>
+#include <QScrollBar>
+#include <QFile>
+#include <QString>
+#include <QProcess>
 
 #include <iostream>
 #include <cassert>

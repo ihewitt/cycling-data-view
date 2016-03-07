@@ -19,6 +19,7 @@
 #include "fit_field.hpp"
 #include "fit_mesg.hpp"
 #include "fit_unicode.hpp"
+#include <memory.h>
 
 namespace fit
 {

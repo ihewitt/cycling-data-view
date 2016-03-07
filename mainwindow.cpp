@@ -16,25 +16,25 @@
 #include <stdio.h>
 #include <iostream>
 
-#include <QLabel.h>
-#include <QScrollArea.h>
-#include <QScrollBar.h>
-#include <QAction.h>
-#include <QMenu.h>
-#include <QMenuBar.h>
-#include <QFileDialog.h>
-#include <QMessageBox.h>
-#include <QPainter.h>
-#include <QApplication.h>
-#include <QGridLayout.h>
-#include <QDesktopWidget.h>
-#include <QBitmap.h>
-#include <QListWidget.h>
-#include <QInputDialog.h>
-#include <QSettings.h>
-#include <QProgressDialog.h>
-#include <QDesktopServices.h>
-#include <QUrl.h>
+#include <QLabel>
+#include <QScrollArea>
+#include <QScrollBar>
+#include <QAction>
+#include <QMenu>
+#include <QMenuBar>
+#include <QFileDialog>
+#include <QMessageBox>
+#include <QPainter>
+#include <QApplication>
+#include <QGridLayout>
+#include <QDesktopWidget>
+#include <QBitmap>
+#include <QListWidget>
+#include <QInputDialog>
+#include <QSettings>
+#include <QProgressDialog>
+#include <QDesktopServices>
+#include <QUrl>
 
 #define COMPANY_NAME "RideViewer"
 #define APP_NAME "RiderViewer"
@@ -79,7 +79,7 @@ MainWindow::~MainWindow()
 {}
 
 /******************************************************/
-void MainWindow::closeEvent(QCloseEvent* event) 
+void MainWindow::closeEvent(QCloseEvent* /*event*/)
 {
 	// Save current user
 	if (!_current_user->name().isEmpty())
@@ -213,7 +213,7 @@ void MainWindow::setLap(int lap_index)
 	 // Create and display about window
 	QPixmap about_image("resources/about_screen.png"); 
 	AboutWindow* about = new AboutWindow(about_image);
-	about->setMessageRect(QRect::QRect(10, 80, 260, 50), Qt::AlignLeft); // setting the message position
+    about->setMessageRect(QRect(10, 80, 260, 50), Qt::AlignLeft); // setting the message position
 	 
 	QFont about_font;
 	about_font.setFamily("Arial");

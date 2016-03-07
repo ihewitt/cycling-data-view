@@ -3,9 +3,9 @@
 #include <qwt_scale_map.h>
 #include <qwt_plot.h>
 
-#include <QPainter.h>
-#include <QPen.h>
-#include <QBrush.h>
+#include <QPainter>
+#include <QPen>
+#include <QBrush>
 
 /******************************************************/
 BarChartItem::BarChartItem(const QwtText& title) : 

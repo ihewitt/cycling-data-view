@@ -79,8 +79,8 @@ public:
 	// Determine if the points are approximately equal, but quickly
 	bool approxEqual(const LatLng& other) const
 	{
-		if ( (abs(other._lat - _lat) < _approx_dist_threshold) && 
-		     (abs(other._lng - _lng) < _approx_dist_threshold) )
+        if ( (fabs(other._lat - _lat) < _approx_dist_threshold) &&
+             (fabs(other._lng - _lng) < _approx_dist_threshold) )
 			return true;
 		else
 			return false;
@@ -91,7 +91,7 @@ public:
 	{
 		const double d = dist(other);
 		
-		if (abs(d) < _dist_threshld)
+        if (fabs(d) < _dist_threshld)
 			return true;
 		else
 			return false;

@@ -103,8 +103,8 @@ void DataProcessing::computeSpeed(
 
 /****************************************/
 double DataProcessing::computeAverage(
-	std::vector<double>::const_iterator& start,
-	std::vector<double>::const_iterator& end)
+    std::vector<double>::const_iterator start,
+    std::vector<double>::const_iterator end)
 {
 	double avg = 0;
 	if (end-start > 0)
@@ -114,8 +114,8 @@ double DataProcessing::computeAverage(
 
 /****************************************/
 double DataProcessing::computeNthPercentile(
-		std::vector<double>::const_iterator& start,
-		std::vector<double>::const_iterator& end,
+        std::vector<double>::const_iterator start,
+        std::vector<double>::const_iterator end,
 		double N)
 {
 	assert(N > 0.0 && N < 1.0);
@@ -132,24 +132,24 @@ double DataProcessing::computeNthPercentile(
 }
 /****************************************/
 double DataProcessing::computeMax(
-	std::vector<double>::const_iterator& start,
-	std::vector<double>::const_iterator& end)
+    std::vector<double>::const_iterator start,
+    std::vector<double>::const_iterator end)
 {
 	return *std::max_element(start, end);
 }
 
 /****************************************/
 double DataProcessing::computeMin(
-	std::vector<double>::const_iterator& start,
-	std::vector<double>::const_iterator& end)
+    std::vector<double>::const_iterator start,
+    std::vector<double>::const_iterator end)
 {
 	return *std::min_element(start, end);
 }
 
 /****************************************/
 double DataProcessing::computeGain(
-	std::vector<double>::const_iterator& start,
-	std::vector<double>::const_iterator& end)
+    std::vector<double>::const_iterator start,
+    std::vector<double>::const_iterator end)
 {
 	double gain = 0;
 	for (std::vector<double>::const_iterator it=++start; it != end; ++it)
@@ -164,8 +164,8 @@ double DataProcessing::computeGain(
 
 /****************************************/
 double DataProcessing::computeLoss(
-	std::vector<double>::const_iterator& start,
-	std::vector<double>::const_iterator& end)
+    std::vector<double>::const_iterator start,
+    std::vector<double>::const_iterator end)
 {
 	double loss = 0;
 	for (std::vector<double>::const_iterator it=++start; it != end; ++it)

@@ -7,7 +7,7 @@
 #include <cassert>
 #include <math.h>
 
-#include <QDateTime.h>
+#include <QDateTime>
 
 /******************************************************/
 BaseParser::BaseParser()

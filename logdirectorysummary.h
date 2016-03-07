@@ -1,9 +1,9 @@
 #ifndef LOGDIRECTORYSUMMARY_H
 #define LOGDIRECTORYSUMMARY_H
 
-#include <QString.h>
-#include <QDateTime.h>
-#include <QStringList.h>
+#include <QString>
+#include <QDateTime>
+#include <QStringList>
 
 #include <vector>
 

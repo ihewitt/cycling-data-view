@@ -4,9 +4,9 @@
 #include <qwt_plot_item.h>
 #include <qwt_text.h>
 
-#include <QList.h>
-#include <QPair.h>
-#include <QColor.h>
+#include <QList>
+#include <QPair>
+#include <QColor>
 
 class BarChartItem
 	: public QwtPlotItem

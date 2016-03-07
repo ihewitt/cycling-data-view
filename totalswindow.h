@@ -1,8 +1,8 @@
 #ifndef TOTALSWINDOW_H
 #define TOTALSWINDOW_H
  
-#include <Qwidget.h>
-#include <QMap.h>
+#include <QWidget>
+#include <QMap>
 
 #include <boost/shared_ptr.hpp>
 

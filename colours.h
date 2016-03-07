@@ -1,7 +1,7 @@
 #ifndef COLOURS_H
 #define COLOURS_H
 
-#include <QColor.h>
+#include <QColor>
 
 // Define colour of plot curves
 #define HR_COLOUR Qt::darkGreen

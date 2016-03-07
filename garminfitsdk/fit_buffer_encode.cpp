@@ -18,6 +18,8 @@
 #include "fit_buffer_encode.hpp"
 #include "fit_crc.hpp"
 
+#include <memory.h>
+
 namespace fit
 {
 

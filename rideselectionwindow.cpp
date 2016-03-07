@@ -6,13 +6,13 @@
 #include "logdirectorysummary.h"
 #include "user.h"
 
-#include <QTreeView.h>
-#include <QStandardItemModel.h>
-#include <QDir.h>
-#include <QProgressDialog.h>
-#include <QBoxLayout.h>
-#include <QLabel.h>
-#include <QMessageBox.h>
+#include <QTreeView>
+#include <QStandardItemModel>
+#include <QDir>
+#include <QProgressDialog>
+#include <QBoxLayout>
+#include <QLabel>
+#include <QMessageBox>
 
 #include <iostream>
 

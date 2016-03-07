@@ -1,7 +1,7 @@
 #ifndef USER_H
 #define USER_H
 
-#include <QString.h>
+#include <QString>
 
 /* Class to represent a single rider */
 

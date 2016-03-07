@@ -11,15 +11,15 @@
 
 #include <cassert>
 
-#include <QDir.h>
-#include <QComboBox.h>
-#include <QLabel.h>
-#include <QBoxLayout.h>
-#include <QProgressDialog.h>
-#include <QPushButton.h>
-#include <QMessageBox.h>
-#include <QTreeView.h>
-#include <QStandardItemModel.h>
+#include <QDir>
+#include <QComboBox>
+#include <QLabel>
+#include <QBoxLayout>
+#include <QProgressDialog>
+#include <QPushButton>
+#include <QMessageBox>
+#include <QTreeView>
+#include <QStandardItemModel>
 
 #define PROXIMITY_THD 15.0 // meters
 
@@ -268,7 +268,7 @@ bool RideIntervalFinderWindow::arePointsEqual(
 		if (pt_a == pt_b) // accurately check that points are the same
 		{
 			const double bearing_threshold = 20.0; // deg
-			if ( abs(pt_a.angle(pt_a_nxt) - pt_b.angle(pt_b_nxt)) < bearing_threshold ) // angle is less than a threshold
+            if ( fabs(pt_a.angle(pt_a_nxt) - pt_b.angle(pt_b_nxt)) < bearing_threshold ) // angle is less than a threshold
 			{
 				equal = true;
 			}

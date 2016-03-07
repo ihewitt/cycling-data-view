@@ -4,8 +4,8 @@
 #include <cassert>
 #include <fstream>
 
-#include <qtxml/qdomdocument>
-#include <QFile.h>
+#include <QtXml/QDomDocument>
+#include <QFile>
 
 #define LOG_SUMMARY_FILENAME "logsummary.xml"
 

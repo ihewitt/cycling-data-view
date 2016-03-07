@@ -5,7 +5,7 @@
 #include <iostream>
 #include <fstream>
 
-#include <QDateTime.h>
+#include <QDateTime>
 
 /****************************************/
 DataLog::DataLog():
@@ -234,7 +234,7 @@ std::pair<int, int>& DataLog::lap(int lap_index)
 }
 
 /****************************************/
-void DataLog::addLap(std::pair<int, int>& lap)
+void DataLog::addLap(const std::pair<int, int>& lap)
 {
 	assert(lap.first < lap.second || (lap.second == lap.first && lap.first == 0) );
 	assert(lap.first >= 0);

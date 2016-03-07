@@ -1,7 +1,7 @@
 #ifndef RIDESELECTIONWINDOW_H
 #define RIDESELECTIONWINDOW_H
 
-#include <QWidget.h>
+#include <QWidget>
 
 #include <boost/shared_ptr.hpp>
 #include <boost/scoped_ptr.hpp>

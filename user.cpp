@@ -2,8 +2,8 @@
 
 #include <fstream>
 
-#include <qtxml/qdomdocument>
-#include <QFile.h>
+#include <QtXml/QDomDocument>
+#include <QFile>
 
 /****************************************/
 User::User(

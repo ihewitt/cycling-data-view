@@ -3,7 +3,7 @@
 
 #include "baseparser.h"
 
-#include <qtxml/qdomdocument>
+#include <QtXml/QDomDocument>
 
 #include <boost/shared_ptr.hpp>
 

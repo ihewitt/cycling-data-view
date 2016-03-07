@@ -3,11 +3,11 @@
 #include "datalog.h"
 #include "user.h"
 
-#include <QTableWidget.h>
-#include <QBoxLayout.h>
-#include <QLabel.h>
-#include <QItemDelegate.h>
-#include <QPainter.h>
+#include <QTableWidget>
+#include <QBoxLayout>
+#include <QLabel>
+#include <QItemDelegate>
+#include <QPainter>
 
 #include <iostream>
 #include <cassert>
@@ -114,8 +114,8 @@ void DataStatisticsWindow::displayCompleteRideStats()
 	// Compute totals
 	double time = _data_log->totalTime();
 	double dist = _data_log->totalDist();
-	double elev_gain = DataProcessing::computeGain(_data_log->altFltd().begin(), _data_log->altFltd().end());
-	double elev_loss = DataProcessing::computeLoss(_data_log->altFltd().begin(), _data_log->altFltd().end());
+    double elev_gain = DataProcessing::computeGain(_data_log->altFltd().begin(), _data_log->altFltd().end());
+    double elev_loss = DataProcessing::computeLoss(_data_log->altFltd().begin(), _data_log->altFltd().end());
 
 	// Compute avgs
 	double avg_speed = DataProcessing::computeAverage(_data_log->speedFltd().begin(), _data_log->speedFltd().end());

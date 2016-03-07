@@ -3,11 +3,11 @@
 
 #include "latlng.h"
 
-#include <qtxml/qdomdocument>
-#include <QWidget.h>
-#include <QPoint.h>
-#include <QWebView.h>
-#include <QMap.h>
+#include <QtXml/QDomDocument>
+#include <QWidget>
+#include <QPoint>
+#include <QtWebKitWidgets/QWebView>
+#include <QMap>
 
 #include <iostream>
 

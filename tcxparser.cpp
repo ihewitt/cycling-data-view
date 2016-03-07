@@ -2,8 +2,8 @@
 #include "datalog.h"
 #include "dataprocessing.h"
 
-#include <QStringList.h>
-#include <QFile.h>
+#include <QStringList>
+#include <QFile>
 #include <iostream>
 
 /******************************************************/

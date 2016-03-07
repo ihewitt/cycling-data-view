@@ -4,13 +4,13 @@
 #include "dataprocessing.h"
 #include "colours.h"
 
-#include <QWebView.h>
-#include <QWebPage.h>
-#include <QWebFrame.h>
-#include <QDir.h>
-#include <QComboBox.h>
-#include <QLabel.h>
-#include <QBoxLayout.h>
+#include <QtWebKitWidgets/QWebView>
+#include <QtWebKitWidgets/QWebPage>
+#include <QtWebKitWidgets/QWebFrame>
+#include <QDir>
+#include <QComboBox>
+#include <QLabel>
+#include <QBoxLayout>
 
 #include <qwt_scale_widget.h>
 #include <qwt_color_map.h>

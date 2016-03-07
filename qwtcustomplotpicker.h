@@ -2,6 +2,7 @@
 #define QWTCUSTOMPLOTPICKER_H
 
 #include <qwt_plot_picker.h>
+#include <qwt_plot_canvas.h>
 
 #include <boost/shared_ptr.hpp>
 
@@ -22,7 +23,7 @@ class QwtCustomPlotPicker : public QwtPlotPicker
 		QwtCustomPlotPicker(
 			int x_axis, int y_axis, 
 			boost::shared_ptr<DataLog> data_log, 
-			QwtPlotCanvas* canvas, 
+            QwtPlotCanvas* canvas,
 			boost::shared_ptr<QCheckBox> hr_cb,
 			boost::shared_ptr<QCheckBox> speed_cb,
 			boost::shared_ptr<QCheckBox> alt_cb,

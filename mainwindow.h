@@ -4,7 +4,7 @@
 #include <boost/shared_ptr.hpp>
 #include <boost/scoped_ptr.hpp>
 
-#include <QMainWindow.h>
+#include <QMainWindow>
 
  class QAction;
  class QLabel;

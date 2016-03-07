@@ -7,16 +7,16 @@
 #include "dateselectorwidget.h"
 #include "logdirectorysummary.h"
 
-#include <QWebView.h>
-#include <QWebPage.h>
-#include <QWebFrame.h>
-#include <QDir.h>
-#include <QComboBox.h>
-#include <QPushButton.h>
-#include <QMessageBox.h>
-#include <QLabel.h>
-#include <QBoxLayout.h>
-#include <QProgressDialog.h>
+//#include <QWebView>
+//#include <QWebPage>
+//#include <QWebFrame>
+#include <QDir>
+#include <QComboBox>
+#include <QPushButton>
+#include <QMessageBox>
+#include <QLabel>
+#include <QBoxLayout>
+#include <QProgressDialog>
 
 #include <qwt_scale_widget.h>
 #include <qwt_color_map.h>

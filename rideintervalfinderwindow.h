@@ -1,9 +1,9 @@
 #ifndef RIDEINTERVALFINDERWINDOW_H
 #define RIDEINTERVALFINDERWINDOW_H
 
-#include <qtxml/qdomdocument>
-#include <QWidget.h>
-#include <QMap.h>
+#include <QtXml/QDomDocument>
+#include <QWidget>
+#include <QMap>
 
 #include <boost/shared_ptr.hpp>
 

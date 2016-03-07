@@ -9,11 +9,11 @@
 #include <qwt_series_data.h>
 #include <qwt_scale_draw.h>
 
-#include <QDateTime.h>
-#include <QIcon.h>
-#include <QBoxLayout.h>
-#include <QCheckBox.h>
-#include <QComboBox.h>
+#include <QDateTime>
+#include <QIcon>
+#include <QBoxLayout>
+#include <QCheckBox>
+#include <QComboBox>
 
 #include <iostream>
 
@@ -25,7 +25,7 @@
 class DateScaleDraw: public QwtScaleDraw
 {
 public:
-	DateScaleDraw(QString& fmt):
+    DateScaleDraw(const QString& fmt):
 	  _format(fmt)
 	  {}
  
@@ -322,7 +322,7 @@ void TotalsWindow::updatePlot()
 	switch (_time_group_selector->currentIndex()) 
 	{
 	case 0: // weekly
-		_plot->setAxisScaleDraw(QwtPlot::xBottom, new DateScaleDraw(tr("weeks")));
+        _plot->setAxisScaleDraw(QwtPlot::xBottom, new DateScaleDraw(tr("weeks")));
 		
 		// Update x-axis style	
 		_plot->setAxisLabelRotation(QwtPlot::xBottom, -90.0);

@@ -1,13 +1,13 @@
 #include "specifyuserwindow.h"
 #include "user.h"
  
-#include <QLineEdit.h>
-#include <QLabel.h>
-#include <QSpinBox.h>
-#include <QSpinBox.h>
-#include <QPushButton.h>
-#include <QFileDialog.h>
-#include <QGridLayout.h>
+#include <QLineEdit>
+#include <QLabel>
+#include <QSpinBox>
+#include <QSpinBox>
+#include <QPushButton>
+#include <QFileDialog>
+#include <QGridLayout>
 
 /******************************************************/
 SpecifyUserWindow::SpecifyUserWindow():
